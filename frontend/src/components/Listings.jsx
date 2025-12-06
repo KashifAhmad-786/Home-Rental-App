@@ -17,8 +17,8 @@ const Listings = () => {
     try {
       const url =
         selectedCategory !== "All"
-          ? `http://localhost:3000/api/listing?category=${selectedCategory}`
-          : "http://localhost:3000/api/listing"
+          ? `https://home-rental-app-xco9.onrender.com/api/listing?category=${selectedCategory}`
+          : "https://home-rental-app-xco9.onrender.com/api/listing"
 
       const res = await fetch(url)
       const data = await res.json()
